@@ -1,0 +1,57 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}  
+\usepackage{gantt}
+\usepackage{pdflscape}
+
+\begin{document}
+
+
+\section{Cronograma de Actividades}
+
+  \begin{landscape}
+  \scalebox{0.5}{
+  \begin{gantt}[xunitlength=1.5cm,fontsize=\small,titlefontsize=\small,drawledgerline=true]{26}{20}
+    \begin{ganttitle}
+      \titleelement{CRONOGRAMA DE ACTIVIDADES}{20}
+    \end{ganttitle}
+    \begin{ganttitle}
+      \numtitle{1}{1}{20}{1}
+    \end{ganttitle}
+    \ganttgroup{Actividad 1}{0}{6}
+    \ganttbar{A1.1-A1.2}{0}{1}
+    \ganttbar{A1.3}{1}{2}
+    \ganttbar{A1.4}{3}{2}
+    \ganttbar{A1.5}{4}{1}
+    \ganttbar{A1.6-A1.7}{5}{1}
+    
+    \ganttgroup{Actividad 2}{6}{5}
+    \ganttbar[color=red]{A2.1}{6}{2}
+    \ganttbar[color=red]{A2.2}{7}{1}
+    \ganttbar[color=red]{A2.3}{8}{1}
+    \ganttbar[color=red]{A2.4}{8}{2}
+    \ganttbar[color=red]{A2.5-A2.6}{10}{1}
+    
+    \ganttgroup{Actividad 3}{11}{4}
+    \ganttbar[color=blue]{A3.1}{11}{1}
+    \ganttbar[color=blue]{A3.2}{12}{1}
+    \ganttbar[color=blue]{A3.4}{13}{1}
+    \ganttbar[color=blue]{A3.4}{14}{1}
+    
+    
+    \ganttgroup{Actividad 4}{15}{3}
+    \ganttbar[color=yellow]{A4.1}{15}{1}
+    \ganttbar[color=yellow]{A4.2-A4.3}{15}{2}
+    \ganttbar[color=yellow]{A4.4}{17}{1}
+  
+
+    \ganttgroup{Actividad 5}{5}{15}
+    \ganttbar[color=green]{A5.1}{5}{15}
+    \ganttbar[color=green]{A5.2}{11}{9}
+   
+  \end{gantt}
+  }
+  \end{landscape}
+
+
+
+\end{document}
